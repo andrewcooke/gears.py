@@ -19,8 +19,9 @@ chainring and the lowest geared double).
 
 From the plot you can see that the triple XT (red) has a top gear
 similar to the top gear of my existing setup (black) and a
-significantly lower bottom gear.  While the double XT loses one gear
-at the top and goes slightly lower at the bottom (about half a step).
+significantly lower bottom gear.  While the double XT (green) loses
+one gear at the top and goes slightly lower at the bottom (about half
+a step).
 
 ## To Use
 
