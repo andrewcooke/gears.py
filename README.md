@@ -14,7 +14,7 @@ gears and compare by eye.
 ![Image of ratios](example.png)
 
 The example above compares my old 26" 9 speed bike with the latest XT
-8000 groupset on a bike with 27.5" wheels (in particular, the triple
+M8000 groupset on a bike with 27.5" wheels (in particular, the triple
 chainring and the lowest geared double).
 
 From the plot you can see that the triple XT (red) has a top gear
