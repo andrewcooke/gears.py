@@ -5,7 +5,7 @@ different wheel sizes / cranksets / chainrings / cassettes.
 The y axis shows the gear ratio; the x axis shows the gear index.  To
 be more precise, the y axis is the natural log of the [gain
 ratio](http://www.sheldonbrown.com/gain.html) and so takes acount of
-wheel size and crank length).  But you don't need to understand that
+wheel size and crank length.  But you don't need to understand that
 to use the plots - just understand that larger numbers are bigger
 gears and compare by eye.
 
