@@ -53,8 +53,8 @@ def plot(*bikes):
         ratios = mkratios(bike.chainrings, bike.cassette, bike.wheel, bike.crank)
         for ratio in bike.ratios:
             plt.plot(x, [log(y) for y in ratio], color=bike.colour, marker='o')
-#    plt.show()
-    plt.savefig("example.png")
+    plt.show()
+#    plt.savefig("example.png")
     
 
 
