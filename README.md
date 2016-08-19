@@ -48,3 +48,7 @@ python gears.py
 ```
 
 Edit the source to change what is displayed.
+
+## License
+
+You can do whatever you like with the code.
