@@ -10,17 +10,19 @@ IN2MM = 25.4
 def mkratios(chainrings, cassette, wheel, crank):
     allratios = []
     for chainring in chainrings:
-       ratios = []
-       for sprocket in cassette:
-           ratio = wheel * chainring / (sprocket * crank)
-           ratios.append(ratio)
-       allratios.append(ratios)
+        ratios = []
+        for sprocket in cassette:
+            ratio = wheel * chainring / (sprocket * crank)
+            ratios.append(ratio)
+            allratios.append(ratios)
+            print(chainring, sprocket, log(ratio))
     return allratios
 
 
 class Bike:
 
     def __init__(self, name, colour, chainrings, cassette, wheel, crank=175):
+        print(name)
         self.name = name
         self.colour = colour
         self.chainrings = chainrings
@@ -50,7 +52,6 @@ def plot(*bikes):
     for bike in bikes:
         n = len(bike.cassette)
         x = [n-i for i in range(n)]
-        ratios = mkratios(bike.chainrings, bike.cassette, bike.wheel, bike.crank)
         for ratio in bike.ratios:
             plt.plot(x, [log(y) for y in ratio], color=bike.colour, marker='o')
     plt.show()
@@ -88,6 +89,8 @@ TEST2X11L = Bike("27.5\" 2x11 24-34 11-42", "green", CRINGXT2434, CSTXT1142, 27.
 TEST2X11M = Bike("27.5\" 2x11 26-36 11-42", "green", CRINGXT2636, CSTXT1142, 27.5, 170)
 TEST2X11H = Bike("27.5\" 2x11 28-38 11-42", "green", CRINGXT2838, CSTXT1142, 27.5, 170)
 
+MOD2X11L =  Bike("27.5\" 2x11 24-36 11-42", "red", [24,36], CSTXT1142, 27.5, 170)
+
 # plot the bikes
 
-plot(MYBIKE, TEST2X11L)
+plot(MOD2X11L, TEST2X11L)
